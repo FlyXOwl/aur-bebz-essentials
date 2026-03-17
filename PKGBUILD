@@ -25,4 +25,5 @@ package() {
 
     mkdir -p "$pkgdir/usr/share/licenses/$pkgname"
     echo "Metapackage personnel" > "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+    echo "V0.1.0" >> PKGBUILD
 }
