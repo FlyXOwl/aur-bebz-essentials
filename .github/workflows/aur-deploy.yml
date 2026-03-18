@@ -18,6 +18,9 @@ jobs:
         with:
           pkgname: bebz-essentials
           pkgbuild: ./PKGBUILD
+          assets: |
+            bebz.install
+            bebzmenu.sh
           ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
           commit_username: ${{ github.actor }}
           commit_email: ${{ github.actor }}@users.noreply.github.com
