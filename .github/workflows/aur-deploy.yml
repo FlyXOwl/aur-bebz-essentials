@@ -13,10 +13,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Publish to AUR
-        uses: KSXGitHub/github-actions-deploy-aur@v3
-        with:
-          pkgname: bebz-essentials
-          ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
-          commit_username: ${{ github.actor }}
-          commit_email: ${{ github.actor }}@users.noreply.github.com
+        - name: Publish to AUR
+            uses: KSXGitHub/github-actions-deploy-aur@v3
+            with:
+            pkgname: bebz-essentials
+            pkgbuild: ./PKGBUILD
+            ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
+            commit_username: ${{ github.actor }}
+            commit_email: ${{ github.actor }}@users.noreply.github.com
+            commit_message: "Update AUR package"
