@@ -1,5 +1,5 @@
 pkgname=bebz-essentials
-pkgver=1.0.0
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="L'installeur interactif de la Bebzerie (Gaming, Drivers)"
 arch=('any')
